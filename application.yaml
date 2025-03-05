@@ -1,10 +1,10 @@
 spring:
-#  jpa:
-#    hibernate:
-#      ddl-auto: update
-#    show-sql: true
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    database-platform: org.hibernate.dialect.MySQL8Dialect
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    database-platform: org.hibernate.dialect.MySQL8Dialect
   cloud:
     config:
       enabled: true
