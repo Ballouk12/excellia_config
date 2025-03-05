@@ -1,1 +1,27 @@
-gi
+spring:
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    database-platform: org.hibernate.dialect.MySQL8Dialect
+  cloud:
+    config:
+      enabled: true
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
