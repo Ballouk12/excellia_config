@@ -4,11 +4,11 @@ spring:
     username: root
     password:
 
-  cloud:
-    stream:
-      bindings:
-        usersTopicConsumer-in-0: # Consommation depuis le topic usersTopic
-          destination: usersTopic
-          group: bourse-group # Groupe de consommateurs pour le topic usersTopic
-      function:
-        definition: usersTopicConsumer
+  #cloud:
+    #stream:
+      #bindings:
+        #usersTopicConsumer-in-0: # Consommation depuis le topic usersTopic
+        #  destination: usersTopic
+       #   group: bourse-group # Groupe de consommateurs pour le topic usersTopic
+      #function:
+        #definition: usersTopicConsumer
