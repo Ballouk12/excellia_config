@@ -7,11 +7,8 @@ spring:
   cloud:
     stream:
       bindings:
-        userEventsConsumer-in-0: # Consommation depuis le topic userEvents
-          destination: userEvents
-          group: bourse-group # Groupe de consommateurs pour le topic userEvents
         usersTopicConsumer-in-0: # Consommation depuis le topic usersTopic
           destination: usersTopic
           group: bourse-group # Groupe de consommateurs pour le topic usersTopic
       function:
-        definition: userEventsConsumer;usersTopicConsumer
+        definition: usersTopicConsumer
